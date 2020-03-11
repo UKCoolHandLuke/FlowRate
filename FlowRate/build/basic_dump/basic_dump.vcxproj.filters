@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{1e000e78-f454-4dc9-ada2-ca919695cc18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{5d121f9c-509d-4db9-9cf7-f2cc2c6227b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{bf078d64-ad0a-4585-aae2-432946f030f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Action.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Block.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Cache.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Email.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Firewall.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_List.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Log.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Result.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ConfigManager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Firewall_Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GUID.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Host.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Interface.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IPRange.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\KeyValuePair.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Log.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Match.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MatchCache.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packet.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Packet_Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PacketRecord.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PassengerProtocol.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PortRange.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Protocol.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Registry.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RegKey.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RegValue.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Rule.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Rule_Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RuleEngine.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Semaphore.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\System_Firewall.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Threshold.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Threshold_List.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TimeStamp.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Utility.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Windows_Firewall.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IP_Address.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IP_Address_List.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IP_Address_Range.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IP_Address_Range_List.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\IP.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Winsock_Interface.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Status.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Winsock_Manager.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Action_Allow.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Email.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Firewall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ConfigManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Firewall_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\GlobalTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\GUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Host.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IPRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KeyValuePair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Match.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\MatchCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Packet_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\PacketRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\PassengerProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\PortRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\RegKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\RegValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Rule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Rule_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\RuleEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Semaphore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\StringList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\System_Firewall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Threshold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Threshold_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Threshold_Trigger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\TimeStamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Windows_Firewall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IP_Address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IP_Address_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IP_Address_Range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IP_Address_Range_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Ethernet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Winsock_Interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Winsock_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Action_Allow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IPv4_Address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\IPv6_Address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
