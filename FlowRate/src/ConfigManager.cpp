@@ -5,13 +5,14 @@ bool ConfigManager::LoadSettings()
 	//Load our reg key for our settings
 
 	RegKey *MyKey = new RegKey();
-	int Result = RegKey::Load("SOFTWARE\\Firewall", MyKey);
+	int Result = RegKey::Load(REGISTRY_LOCATION, MyKey);
 	
 	if (Result == ERROR_SUCCESS)
 	{
-
 		//List of rules
 		RegKey *KeyName = MyKey->GetSubKey("Rules");
+
+		//System::Logging.Writeln("sds","Processing ", KeyName->Keys.size(), " Rules");
 
 		for (Int32 i = 0; i < KeyName->Keys.size(); i++)
 		{

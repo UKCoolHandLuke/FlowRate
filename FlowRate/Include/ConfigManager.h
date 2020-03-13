@@ -11,6 +11,7 @@
 
 #define INVALID_NUMBER	-1
 
+#define REGISTRY_LOCATION "SOFTWARE\\FlowRate"
 
 class ConfigManager
 {

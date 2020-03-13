@@ -86,11 +86,49 @@ bool Log::Write(char *Text)
 	return(Write(Text, false));
 }
 
+
 bool Log::Writeln(char *Text)
 {
 	return(Write(Text, true));
 }
 
+/*
+bool Log::Writeln(const char *Text...)
+{
+	va_list args;
+	va_start(args, Text);
+	stringstream ss;
+
+	while (*Text != '\0') {
+		if (*Text == 'd') //process int
+		{
+			int i = va_arg(args, int);
+			ss << i;
+		}
+		else if (*Text == 'c') //process character
+		{
+			int c = va_arg(args, int);
+			ss << static_cast<char>(c);
+		}
+		else if (*Text == 's')	//process string
+		{
+			ss << args;
+		}
+
+		else if (*Text == 'f') //process float/double
+		{
+			double d = va_arg(args, double);
+			ss << d;
+		}
+
+		++Text;
+	}
+	va_end(args);
+
+	Writeln(ss.str());
+	return(true);
+}
+/*
 
 
 
@@ -98,7 +136,7 @@ bool Log::Writeln(char *Text)
 Ony Write if log level are correct
 */
 
-bool Log::Writeln(char * Text, LogLevel L)
+bool Log::Writeln(const char * Text, LogLevel L)
 {
 	if (getLogLevel() >= L)
 	{
