@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Log.h>
+#include <Utility.h>
 
 #define VERSION_NUMBER	0.21
 

@@ -45,7 +45,6 @@ public:
 	
 	bool Writeln(char *Text);
 	bool Writeln(string Text);
-	//bool Writeln(const char *Text...);
 
 	bool Writeln(const char * Text, LogLevel L);
 	bool Writeln(string Text, LogLevel L);

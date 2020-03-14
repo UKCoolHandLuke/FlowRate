@@ -12,7 +12,7 @@ bool ConfigManager::LoadSettings()
 		//List of rules
 		RegKey *KeyName = MyKey->GetSubKey("Rules");
 
-		//System::Logging.Writeln("sds","Processing ", KeyName->Keys.size(), " Rules");
+		System::Logging.Writeln(ExpandString("Processing %d Rule(s)", KeyName->Keys.size()));
 
 		for (Int32 i = 0; i < KeyName->Keys.size(); i++)
 		{
@@ -113,14 +113,7 @@ StringList *ConfigManager::SplitString(string input, char delimeter)
 			v->push_back(input.substr(b, e - b));
 			b = e;
 		}
-		/*
-		std::stringstream ss(input);
-		std::istream_iterator<std::string> begin(ss);
-		std::istream_iterator<std::string> end;
-		std::vector<std::string> vstrings(begin, end);
-		std::vector<std::string> container{}
-		std::copy(vstrings.begin(), vstrings.end(), std::ostream_iterator<std::string>(MyList.begin(), (char *)delimeter.c_str()));
-		*/
+
 	return(v);
 }
 
@@ -334,9 +327,7 @@ bool ConfigManager::LoadRule(RegKey *R, Rule *&NewRule)
 					Action *A = Action_Manager::CreateAction(ActionType);
 					if (A == NULL)
 					{
-						stringstream ss;
-						ss << "Failed to load action with type " << ActionType << " for rule " << M->GetID();
-						System::Logging.Writeln(ss.str());
+						System::Logging.Writeln(ExpandString("Failed to load action with type %d for rule %s",ActionType,M->GetID()));
 					}
 					else
 					{

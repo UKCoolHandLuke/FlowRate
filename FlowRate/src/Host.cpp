@@ -41,10 +41,7 @@ bool Host::Add(Packet *P)
 {
 Packets.push_back(P);
 
-stringstream ss;
-
-ss << HostAddress.to_string() << " Stack Size: " << Packets.size() << " ";
-System::Logging.Writeln(ss.str(),LogLevel::LOG_DEBUG);
+System::Logging.Writeln(ExpandString("%s Stack Size: %d", HostAddress.to_string(), Packets.size()),LogLevel::LOG_DEBUG);
 
 return(true);
 }

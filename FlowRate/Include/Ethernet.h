@@ -24,6 +24,7 @@ struct Ethernet_Header
 //Convert a single decimal value into a hex one
 string DecimalToHex(Int32 Value)
 {
+	
 	stringstream ss;
 	ss << std::hex << Value;
 	return(ss.str());

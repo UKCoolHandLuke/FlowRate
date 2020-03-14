@@ -28,27 +28,9 @@ bool Windows_Firewall::Rule_Add(string Name, string Group, MATCH_STATUS Directio
 	long CurrentProfilesBitMask = 0;
 
 	stringstream ss;
-
-	ss << "Adding filter rule: " + Name + " for host " + Host;
-	ss << " Protocol: " + to_string(Protocol);
-	ss << " Port: " + to_string(Port);
-	//Log_File.Writeln("Adding Firewall Rule for host: " + Host);
-
-	Log_File.Writeln(ss.str(), LogLevel::LOG_INFO);
-
-	//Lets determine the direction (Incoming/outgoing)
-
-	// The rule name, description, and group are provided as indirect strings for 
-	// localization purposes. These resource strings can be found in the rc file
-	/*
-	BSTR bstrRuleName = SysAllocString(L"FWRule:");
-	BSTR bstrRuleDescription = SysAllocString(L"Filter host: ");
-	BSTR bstrRuleGroup = SysAllocString(L"FWRule");
 	
-	BSTR bstrRuleLPorts = SysAllocString(L"4000");
-	BSTR bstrRuleRHost = SysAllocString(L"8.8.8.8");
-	*/
-
+	Log_File.Writeln(ExpandString("Adding filter rule: %s for host %s Protocol %d Port: %d",Name,Host,Protocol,Port), LogLevel::LOG_INFO);
+	
 	BSTR bstrRuleName = _com_util::ConvertStringToBSTR((char *)Name.c_str());
 	BSTR bstrRuleDescription = _com_util::ConvertStringToBSTR((char *)Name.c_str());
 	BSTR bstrRuleGroup = _com_util::ConvertStringToBSTR((char *)Group.c_str());

@@ -13,8 +13,8 @@ string ExpandString(const char *sText...);
 
 int main()
 {
-
-	cout << ExpandString("Hello %s %d World","test", 5);
+	string H = "Hello";
+	cout << ExpandString("Hello %s %d World",H, 5);
 	
 }
 
@@ -44,13 +44,16 @@ string ExpandString(const char *sText...)
 		switch (identifier)
 		{
 		case 's':
-			ss << va_arg(args, char*);
+			ss << va_arg(args, string);
 			break;
 		case 'd':
 			ss << va_arg(args, int);
 			break;
 		case 'f':
 			ss << va_arg(args, double);
+			break;
+		case 'c':
+			ss << va_arg(args, char);
 			break;
 
 		default:

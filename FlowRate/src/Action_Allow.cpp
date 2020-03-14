@@ -13,9 +13,8 @@ Action_Result Action_Allow::Execute(Action_Block *Block)
 {
 
 	Action_Result Result;
-	stringstream ss;
-	ss << "Host: " + Block->Host + " is whitelisted using the rule ";
-	System::Logging.Writeln(ss.str(), LogLevel::LOG_INFO);
+
+	System::Logging.Writeln(ExpandString("Host: %s  is whitelisted using the rule ", Block->Host), LogLevel::LOG_INFO);
 	Result.Result = true;
 		
 	delete Block;	//clean up the block

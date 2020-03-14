@@ -28,7 +28,6 @@ Action_Result Action_Firewall::Execute(Action_Block *Block)
 {
 	
 	Action_Result Result;
-	stringstream ss;
 	Int32 Duration = ACTION_FIREWALL_DURATION_DEFAULT;		//default firewall blocked duration
 
 	//We need a copy of the host details and rules details for the firewall rule
@@ -55,9 +54,7 @@ Action_Result Action_Firewall::Execute(Action_Block *Block)
 
 string Action_Firewall::getDescription()
 {
-	stringstream ss;
-	ss << "Apply a firewall rule that will only be relinquished after " << Properties.getvalue("Duration") << " second(s)";
-	return(ss.str());
+	return(ExpandString("Apply a firewall rule that will only be relinquished after %s second(s)", Properties.getvalue("Duration")));
 }
 
 

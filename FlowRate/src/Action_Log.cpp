@@ -17,7 +17,6 @@ Action_Result Action_Log::Execute(Action_Block *Block)
 {
 
 	Action_Result Result;
-	stringstream ss;
 
 	if (LogObj == NULL)
 	{
@@ -36,16 +35,8 @@ Action_Result Action_Log::Execute(Action_Block *Block)
 		}
 	}
 	
-	ss << "Host: " + Block->Host + " Exceeded rule of ";
-	ss << Block->Threshold->getLimit();
-	ss << " packets(s) within ";
-	ss << Block->Threshold->getTimeframe();
-	ss << " seconds.";
-
-	ss << " host stack is: ";
-	ss << Block->HostStackSize;
-
-	if (LogObj->Writeln(ss.str(),LogLevel::LOG_INFO))
+	string LogText = ExpandString("Host: %s Exceeded rule of %d packets(s) within %d seconds. Host stack is: %d", Block->Host, Block->Threshold->getLimit(), Block->Threshold->getTimeframe(), Block->HostStackSize);	
+	if (LogObj->Writeln(LogText,LogLevel::LOG_INFO))
 		Result.Result = true;
 
 	
